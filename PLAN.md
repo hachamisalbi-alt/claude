@@ -110,6 +110,14 @@ Calculés uniquement à partir des horodatages des événements :
 - **Délai transporteur** = livraison − 1er scan
 Moyenne et médiane par zone, en jours ouvrables et calendaires ; les zones avec < 5 envois sont signalées.
 
+## Avancement
+
+- [x] Étape 0 (partielle) : Worker Cloudflare, schéma D1, client Stallion (auth, idempotence, relances)
+- [x] Étape 1 : réglages (coupure 23 h, boîtes 8x6x4 / 8x8x8, 2 lb, Intelcom)
+- [x] Étape 2 (partielle) : import du rapport Seller Central, lot du jour, boîte proposée
+- [x] Logique testée : choix du service, confirmation du total, PDF trié par SKU, fichier de confirmation Amazon
+- [ ] Bloqué : tarifs, achat, lots et suivi Stallion → accès réseau à `docs.stallion.ca` / `sandbox.stallion.ca` requis
+
 ## Plan par étapes
 
 0. **Fondations** — repo, `.env`, client Stallion v5, lecture complète de la doc,

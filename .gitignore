@@ -16,3 +16,7 @@ data/
 labels/
 *.log
 .DS_Store
+
+# État local de Wrangler (base D1 locale)
+.wrangler/
+.dev.vars

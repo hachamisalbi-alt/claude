@@ -1,0 +1,17 @@
+name = "medykare-shipping"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[vars]
+STALLION_ENV = "sandbox"
+TIMEZONE = "America/Toronto"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "medykare"
+database_id = "REMPLACER_APRES_wrangler_d1_create"
+migrations_dir = "migrations"
+
+# Collecte du suivi toutes les 30 minutes
+[triggers]
+crons = ["*/30 * * * *"]
