@@ -1,0 +1,18 @@
+# Secrets — ne jamais committer
+.env
+.env.*
+!.env.example
+
+# Dépendances / builds
+node_modules/
+dist/
+build/
+.vite/
+
+# Données locales
+data/
+*.sqlite
+*.sqlite-journal
+labels/
+*.log
+.DS_Store
